@@ -1,0 +1,261 @@
+#frame2-container {
+	width: 1920px;
+	height: 1080px;
+	position: relative;
+	margin-top: -2px;
+}
+
+#frame2-container h2 {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	translate: -50% 0;
+	width: 1082px;
+	height: 157px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#frame2-swiper-container {
+	width: 1390px;
+	height: 687px;
+	position: absolute;
+	top: 170px;
+	left: 265px;
+}
+
+#swiper-bg {
+	width: 1229px;
+	height: 721px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	translate: -50% 0;
+}
+
+#frame2-swiper {
+	width: 1125px;
+	height: 612px;
+	position: absolute;
+	top: 50%;
+	left: 49.9%;
+	translate: -50% -50%;
+	overflow: hidden;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 97% 100%, 0% 100%);
+}
+
+#fold {
+	position: absolute;
+	right: 106px;
+	bottom: 10px;
+}
+
+#paperclip {
+	position: absolute;
+	top: -25px;
+	left: 100px;
+}
+
+#frame2-container :is(.swiper-button-prev, .swiper-button-next)::after {
+	display: none;
+}
+
+#ribbon-button-container {
+	font-family: UTM-FacebookRKT;
+	display: flex;
+	position: absolute;
+	right: 141px;
+}
+
+.ribbon-button {
+	box-sizing: border-box;
+	padding-inline: 14px;
+	width: 83px;
+	height: 253px;
+	display: block;
+	font-size: 22.02px;
+	line-height: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	color: rgb(120, 69, 24);
+}
+
+.ribbon-button img:last-child {
+	--animate-duration: 3s;
+	display: none;
+}
+
+.ribbon-button[active] img:last-child {
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
+	translate: -50% 0;
+	display: block;
+}
+
+#frame2-cta {
+	width: 335px;
+	height: 88px;
+	position: absolute;
+	bottom: 45px;
+	left: 793px;
+	font-size: 28.75px;
+	color: rgb(119, 76, 35);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#frame2-container p {
+	font-family: UTM-FacebookRKT;
+	width: 1200px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 155px;
+	margin: 0;
+	left: 50%;
+	translate: -50% 0;
+	font-size: 23.49px;
+}
+
+/* responsive */
+
+body[data-device-type="mobile"] #frame2-container img.mobile {
+	display: block;
+}
+
+body[data-device-type="mobile"] #frame2-container {
+	width: 768px;
+	height: 1457px;
+	position: relative;
+}
+
+body[data-device-type="mobile"] #frame2-container h2 {
+	position: absolute;
+	top: 38px;
+	width: fit-content;
+	height: fit-content;
+}
+
+body[data-device-type="mobile"] #frame2-swiper-container {
+	width: 768px;
+	height: 690px;
+	background-color: gainsboro;
+	position: absolute;
+	top: 224px;
+	left: 0;
+}
+
+body[data-device-type="mobile"] #ribbon-button-container {
+	top: 690px;
+	left: 50%;
+	right: unset;
+	translate: -50% 0;
+	gap: 77px;
+}
+
+body[data-device-type="mobile"] #frame2-container .swiper-button-prev {
+	margin-left: 30px;
+}
+
+body[data-device-type="mobile"] #frame2-container .swiper-button-next {
+	margin-right: 30px;
+}
+
+body[data-device-type="mobile"] .ribbon-button {
+	box-sizing: border-box;
+	padding-inline: 14px;
+	display: block;
+	font-size: 26.72px;
+	line-height: 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	color: rgb(120, 69, 24);
+}
+
+body[data-device-type="mobile"] .ribbon-button[active] img:last-child {
+	bottom: 8px;
+}
+
+body[data-device-type="mobile"] #frame2-swiper {
+	width: 768px;
+	height: 613px;
+	position: absolute;
+	top: 50%;
+	left: 49.9%;
+	translate: -50% -50%;
+	overflow: hidden;
+	clip-path: none;
+}
+
+body[data-device-type="mobile"] #frame2-swiper img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+body[data-device-type="mobile"] #frame2-container p {
+	width: calc(100% - 7px * 2);
+	color: white;
+	position: absolute;
+	bottom: 160px;
+	margin: 0;
+	left: 50%;
+	translate: -50% 0;
+	font-size: 24.3px;
+	text-align: center;
+}
+
+body[data-device-type="mobile"] #frame2-cta {
+	width: 335px;
+	height: 88px;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	translate: -50% 0;
+	font-size: 28.75px;
+	color: rgb(119, 76, 35);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+html[lang="en"] body[data-device-type="mobile"] #frame2-container p {
+	width: calc(100% - 100px * 2);
+	font-size: 29.3px;
+}
+
+html[lang="id"] body[data-device-type="mobile"] #frame2-container p {
+	width: calc(100% - 178px * 2);
+	font-size: 29.3px;
+}
+
+html[lang="th"] #frame2-container p {
+	bottom: 145px;
+	font-size: 43px;
+	width: 100%;
+}
+
+html[lang="th"] body[data-device-type="mobile"] #frame2-container p {
+	bottom: 170px;
+	font-size: 50px;
+	width: 100%;
+}
+
+html[lang="cn"] #frame2-container p {
+	font-family: cn-2;
+	width: calc(100% - 166px * 2);
+	font-size: 26.3px;
+}

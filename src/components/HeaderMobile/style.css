@@ -1,0 +1,122 @@
+#header-mobile {
+	width: 768px;
+	background-color: rgba(11, 25, 44, 0.5);
+	position: fixed;
+	z-index: 20;
+}
+
+#header-bg {
+	width: 768px;
+	height: 90px;
+	background-color: rgba(11, 25, 44, 0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#favicon {
+	position: absolute;
+	left: 20px;
+	top: 9px;
+	z-index: 100;
+}
+
+#open-menu-button {
+	position: absolute;
+	right: 25px;
+	top: 30px;
+}
+
+#mid-button-container {
+	font-family: utm-fb;
+	color: rgb(253, 247, 234);
+	position: absolute;
+	right: 82px;
+	top: 19px;
+	display: flex;
+	gap: 5px;
+}
+#mid-button-container a {
+	font-size: 24px;
+	color: white;
+	background-image: url("./assets/blue_button.png");
+	width: 211px;
+	height: 57px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hidden-menu-container {
+	font-family: barlow-medium;
+	width: 768px;
+	height: 706px;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	top: 90px;
+	z-index: 10;
+}
+
+#hidden-menu-container nav {
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+	align-items: center;
+	position: absolute;
+	top: 45px;
+	width: 200px;
+	left: 50%;
+	translate: -50% 0;
+}
+
+#hidden-menu-container nav :is(a, button) {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+#hidden-menu-container nav a:last-child {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#header-mobile .lang-button-container {
+	display: flex;
+	width: 768px;
+	gap: 22px;
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	translate: -50% 0;
+}
+
+#header-mobile .lang-button-container ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 22px;
+	flex-wrap: wrap;
+	width: 768px;
+	justify-content: center;
+}
+
+#header-mobile .lang-button-container a {
+	font-family: barlow-medium;
+	display: block;
+	background-image: url("./assets/gray_button.png");
+	width: 198px;
+	height: 44px;
+	color: white;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* responsive */
+
+body[data-device-type="mobile"] #header-mobile {
+	display: block;
+}

@@ -1,0 +1,51 @@
+#float-container {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#float-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	pointer-events: all;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#float-bg a {
+	display: block;
+	width: 140px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+#float-link-container {
+	position: fixed;
+	height: 470px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	right: 20px;
+	top: 430px;
+	background-image: url("./assets/float_bg.png");
+	width: 140px;
+	height: 408px;
+	background-repeat: no-repeat;
+	transition: all 0.2s;
+}
+
+#recharge {
+	margin-top: -150px;
+}

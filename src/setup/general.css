@@ -1,0 +1,91 @@
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #fdfdfd;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	background: none;
+	position: relative;
+}
+
+#outer-root {
+	width: fit-content;
+	overflow: hidden;
+}
+
+#root {
+	position: relative;
+	transform-origin: top left;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+a:hover,
+button:hover {
+	cursor: pointer;
+	pointer-events: all;
+	filter: brightness(110%);
+}
+
+@font-face {
+	font-family: RobotoCondensed-Bold;
+	src: url("../assets/fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+	font-family: RobotoCondensed-Regular;
+	src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+	font-family: utm-fb;
+	src: url("../assets/fonts/UTM-Facebook.ttf");
+}
+
+@font-face {
+	font-family: barlow-light;
+	src: url("../assets/fonts/Barlow-Light.ttf");
+}
+
+@font-face {
+	font-family: barlow-bold;
+	src: url("../assets/fonts/Barlow-Bold.ttf");
+}
+
+@font-face {
+	font-family: barlow-medium;
+	src: url("../assets/fonts/Barlow-Medium.ttf");
+}
+@font-face {
+	font-family: UTM-FacebookRKT;
+	src: url("../assets/fonts/UTM-FacebookRKT.ttf");
+}
+
+@font-face {
+	font-family: cn-1;
+	src: url('../assets/fonts/cn_1.ttf');
+}
+
+@font-face {
+	font-family: cn-2;
+	src: url('../assets/fonts/cn_2.ttf');
+}
